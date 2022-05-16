@@ -10,11 +10,12 @@ const students = [
 ]
 
 function Main() {
-    const [studentList, setStudentList] = useState(students);
+    const [studentList, setStudentList] = useState(students); // we cant modify studentlist, so we use state as kind of a new variable
     const handleClick = () => {
         //add rodrigo to list of students
         const rodrigo = { id: 6, firstName: 'Rodrigo'}
         setStudentList([...students, rodrigo])
+        document.querySelector('button').style.display='none'
     
     }
 
