@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Greet from "./Greet";
 
 const students = [
@@ -10,10 +10,18 @@ const students = [
 ]
 
 function Main() {
+    const [studentList, setStudentList] = useState(students);
+    const handleClick = () => {
+        //add rodrigo to list of students
+        const rodrigo = { id: 6, firstName: 'Rodrigo'}
+        setStudentList([...students, rodrigo])
+    
+    }
 
     return (
         <main>
-        {students.map(student => {
+            <button onClick={handleClick}>Add Rodrigo</button>
+        {studentList.map(student => {
             return <Greet 
             key={student.id} 
             firstName={student.firstName} 
