@@ -1,7 +1,7 @@
 import React from "react";
 
-function Greet ({firstName }) {
-    return <h2>Hello {firstName}!</h2>
+function Greet ({firstName, lastName }) {
+    return <h2>Hello {firstName || lastName}!</h2>
 }
 
 
