@@ -13,10 +13,7 @@ function Main() {
 
     return (
         <main>
-            <Greet firstName = "Wade" lastName= "Booth" />
-            <Greet firstName = "Alex"/>
-            <Greet firstName = "Maria"/>
-            <Greet firstName = "Arthur"/>
+       
         </main>
     )
 }
