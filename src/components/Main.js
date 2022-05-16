@@ -13,7 +13,9 @@ function Main() {
 
     return (
         <main>
-       
+        {students.map(student => {
+            return <Greet key={student.id}/> 
+        })}
         </main>
     )
 }
