@@ -14,7 +14,10 @@ function Main() {
     return (
         <main>
         {students.map(student => {
-            return <Greet key={student.id}/> 
+            return <Greet 
+            key={student.id} 
+            firstName={student.firstName} 
+            lastName={student.lastName}/> 
         })}
         </main>
     )
